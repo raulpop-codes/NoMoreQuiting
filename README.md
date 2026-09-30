@@ -30,12 +30,12 @@ The source is kept in a private repository; this one exists to describe the syst
 
 ## Team & workflow
 
-| | Role |
+| | Focus |
 |---|---|
-| **[Raul Pop](https://github.com/raulpop-codes)** | Backend & MySQL database, development-process coordination, data validation and sanitization |
-| **[BROTHER_NAME](https://github.com/BROTHER_GITHUB)** | ROLE |
+| **[Raul&nbsp;Pop](https://github.com/raulpop-codes)** | Backend · Database · Deployment |
+| **[Ioan&nbsp;Pop](https://github.com/pop-ioan-30123)** | Backend · Frontend · UI/UX design |
 
-NoMoreQuiting is developed with an **AI-assisted workflow**: features are planned and broken down into tasks by the team, implemented with the help of AI coding tools, and backed by an automated test suite (see [Quality & testing](#quality--testing)).
+Development is coordinated jointly by both developers, using an **AI-assisted workflow**: features are planned and broken down into tasks, implemented with the help of AI coding tools, and backed by an automated test suite (see [Quality & testing](#quality--testing)).
 
 ---
 
