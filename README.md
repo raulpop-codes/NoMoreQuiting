@@ -2,7 +2,7 @@
 
 # 🏋️ NoMoreQuiting
 
-**A full-stack workout-tracking platform with gamification, social features, and real operational tooling — built solo, end to end.**
+**A full-stack workout-tracking platform with gamification, social features, and real operational tooling — built by a team of two.**
 
 [![Live Site](https://img.shields.io/badge/Live-nomorequiting.com-e8a33d?style=for-the-badge)](https://nomorequiting.com)
 [![.NET](https://img.shields.io/badge/.NET_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](#)
@@ -20,21 +20,32 @@
 
 ## What it is
 
-NoMoreQuiting is a workout-tracking app that goes beyond logging sets and reps. It's built around the idea that **consistency is a behavioral problem, not a logging problem** — so on top of a full training log, it layers gamification (tiered achievements, activity-level ranks, friend/following leaderboards), a real social graph (friends, follows, blocks, public profiles), and three separate training disciplines (Gym, Fitness, Qigong) with their own exercise catalogs and scheduling.
+NoMoreQuiting is a workout-tracking app that goes beyond logging sets and reps. It's built around the idea that **consistency is a behavioral problem, not a logging problem** — so on top of a full training log, it layers gamification (tiered achievements, activity-level ranks, friend/following leaderboards), a real social graph (friends, follows, blocks, public profiles), and two training disciplines (Gym and Fitness) with their own exercise catalogs and scheduling.
 
-It's also a complete production system, not a demo: role-based administration, a support-ticket pipeline with email integration, operational alerting for the person running it, and an audit trail — the kind of surface area a real SaaS product needs, built and shipped by one person.
+It's also a complete production system, not a demo: role-based administration, a support-ticket pipeline with email integration, operational alerting for the person running it, and an audit trail — the kind of surface area a real SaaS product needs.
 
 The source is kept in a private repository; this one exists to describe the system. The app itself is live at **[nomorequiting.com](https://nomorequiting.com)**.
+
+---
+
+## Team & workflow
+
+| | Role |
+|---|---|
+| **[Raul Pop](https://github.com/raulpop-codes)** | Backend & MySQL database, development-process coordination, data validation and sanitization |
+| **[BROTHER_NAME](https://github.com/BROTHER_GITHUB)** | ROLE |
+
+NoMoreQuiting is developed with an **AI-assisted workflow**: features are planned and broken down into tasks by the team, implemented with the help of AI coding tools, and backed by an automated test suite (see [Quality & testing](#quality--testing)).
 
 ---
 
 ## Feature highlights
 
 ### Training
-- Custom workout categories per discipline (Gym / Fitness / Qigong), each with its own color, exercise pool, and recurring schedule
+- Custom workout categories per discipline (Gym / Fitness), each with its own color, exercise pool, and recurring schedule
 - Live session tracking — sets, reps, weight, per-exercise rest timers — with autosave as you train, not just on finish
 - Automatic weight/rep progression suggestions based on your own history
-- Personal-record detection and a full exercise catalog with muscle-group tagging and equipment metadata
+- Personal-record detection and a catalog of 40+ exercises with muscle-group tagging and equipment metadata
 
 ### Gamification
 - A tiered achievement system (milestones, per-exercise performance tiers, role badges) computed from real training history, with a Redis-backed cache layer so the achievements page doesn't re-walk a user's entire session history on every view
